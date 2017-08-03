@@ -1,10 +1,12 @@
 # DCC003 - Algoritmos e Estrutura de Dados 1: 2017.2
 
-Professor: Flavio Figueiredo
+Professores: Flavio Figueiredo e Italo Cunha
 
 Aulas: Terças e Quintas 07:30-09:10
 
-Sala: 1016 (Icex)
+Sala Teórica: 2013 (Icex)
+
+Sala Prática: 1009 e 1008 (Icex)
 
 Monitores: ??
 
@@ -25,11 +27,7 @@ Monitores: ??
   
 ## Slides
 
-Slides disponíveis [Google Drive](TODO).
-
-## Slides
-
-Comparitivo com a segunda turma [aqui](https://docs.google.com/spreadsheets/d/1AJsQ9P8BawopEP8V1DMp1nMEfrdaLt6s69GxvJaSTuE/edit?usp=sharing).
+Slides disponíveis [Google Drive](https://drive.google.com/open?id=1ZTxTJVCvZwnGPupmUvnDiO3rDKALwK6fbk-kfS9jqEA).
 
 **Plano de aulas inicial**
 
