@@ -27,7 +27,7 @@ Monitores: ??
   
 ## Slides
 
-Slides disponíveis [Google Drive](https://drive.google.com/open?id=1ZTxTJVCvZwnGPupmUvnDiO3rDKALwK6fbk-kfS9jqEA).
+Slides disponíveis [Google Drive](https://drive.google.com/open?id=1ihJwbn5uwRqkAMa2iHD4qbuFlzVZz0fSsaKKEB9yqTo).
 
 **Plano de aulas inicial**
 
