@@ -47,10 +47,10 @@
 
 1. Calcular a representação binária de um número consiste em realizar
    sucessivos divisões deste número por 2 e, quando seu resto for menor que 2,
-   imprimir do último para o primeiro, todos os restos das divisões.
-   Por exemplo: 6 / 2  = 3 (resto 0) => 3 / 2 = 1 (resto 1) => 1 / 2 = 0 (resto
-   1) 6 em binário = 110 Implemente um programa para o cálculo da representação
-   binária de um inteiro positivo n qualquer.
+imprimir do último para o primeiro, todos os restos das divisões.  Por exemplo:
+6 / 2  = 3 (r=0) => 3 / 2 = 1 (r=1) => 1 / 2 = 0 (r=1) 6 em binário = 110
+Implemente um programa para o cálculo da representação binária de um inteiro
+positivo n qualquer.
 
 1. Escreva um programa que lê uma matriz e que computa a transposta de uma
    matriz passada por parâmetro.
