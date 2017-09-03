@@ -1,0 +1,21 @@
+A = 27;
+B = 4;
+quociente = 0;
+fazer {
+  x = A - B
+  A = x;
+  quociente = quociente + 1;
+} até x < B;
+
+Passo 1:
+  x = 27 - 4 = 23;
+  A = 23;
+
+
+
+27 - 4 = 23
+23 - 4 = 19
+19 - 4 = 15
+15 - 4 = 11
+11 - 4 = 7
+7 - 4 = 3
