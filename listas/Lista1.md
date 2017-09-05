@@ -10,7 +10,7 @@
    * Se a velocidade do veículo for mais do que 20% da máxima, a multa é R$600.
 
 1. Implemente um programa que determina se um número é triangular. Se um número
-   for triangular ele pode ser escrito como um produto de uma sequência de
+   for triangular ele pode ser escrito como uma soma de uma sequência de
    naturais.
    ![](triangulares.png)
 
