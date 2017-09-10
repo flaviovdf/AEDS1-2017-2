@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-main() {
+int main(void) {
   char c;
 
   printf("Letra: ");

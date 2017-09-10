@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   int selecao;
 
   printf("Prato 1 - Miojo\n");

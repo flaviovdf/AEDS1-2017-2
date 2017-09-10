@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-main(void)
-{ /* Início do bloco de comandos */
+int main(void) { /* Início do bloco de comandos */
   int a, b;
   a = 1;
   b = a;

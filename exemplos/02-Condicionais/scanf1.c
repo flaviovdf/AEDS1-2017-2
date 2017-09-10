@@ -1,7 +1,7 @@
 #include <stdio.h>
-main(){
+int main(void) {
   int n;
   printf("Digite um número: ");
-  scanf("%d",&n);
-  printf("O valor digitado foi %d\n",n);
+  scanf("%d", &n);
+  printf("O valor digitado foi %d\n", n);
 }

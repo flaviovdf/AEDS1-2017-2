@@ -1,8 +1,8 @@
 #include <stdio.h>
-main(){
+int main(void) {
   float f;
   double d;
-  
+
   printf("Digite um float: ");
   scanf("%f",&f);
   printf("O float digitado foi %.20f\n",f);
@@ -10,5 +10,4 @@ main(){
   printf("Digite um double: ");
   scanf("%lf",&d);
   printf("O double digitado foi %.20lf\n",d);
-  
 }

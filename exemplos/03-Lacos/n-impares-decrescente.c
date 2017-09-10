@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   int n_impares;
   
   printf("Quantos números ímpares? ");

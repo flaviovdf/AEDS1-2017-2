@@ -6,18 +6,13 @@
    ***
    **
    *
-   *
-   **
-   ***
-   ****
-   *****
    
    Base é o número de asteriscos da maior linha.
 */
 
 #include <stdio.h>
 
-main() {
+int main(void) {
 
   int i, j, base;
 
@@ -26,12 +21,6 @@ main() {
 
   for (j = 0; j < base; j++) {
     for (i = 0; i < base - j; i++)
-      printf ("*");
-    printf ("\n");    
-  }
-
-  for (j = 0; j < base; j++) {
-    for (i = 0; i <= j; i++)
       printf ("*");
     printf ("\n");    
   }

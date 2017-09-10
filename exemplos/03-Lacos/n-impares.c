@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   int n;
   int impar;
   int i;

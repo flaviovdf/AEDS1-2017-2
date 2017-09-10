@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   int matriz [5][5];
   int i, j;
   int inferior;

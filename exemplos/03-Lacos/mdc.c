@@ -15,7 +15,7 @@
 
 #include <stdio.h>
 
-main() {
+int main(void) {
   int numero1, numero2; 
   int x, y, r;
 

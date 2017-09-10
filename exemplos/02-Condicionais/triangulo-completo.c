@@ -1,5 +1,5 @@
 #include <stdio.h>
-main () {
+int main(void) {
   float a, b, c;
 
   printf("a: ");

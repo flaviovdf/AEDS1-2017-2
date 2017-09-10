@@ -1,5 +1,5 @@
 #include <stdio.h>
-main () {
+int main(void) {
   int matriz [4][4];
   int i, j;
 

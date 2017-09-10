@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+int main(void) {
   char c;
   printf("Digite um caracter: ");
   scanf("%c",&c);
