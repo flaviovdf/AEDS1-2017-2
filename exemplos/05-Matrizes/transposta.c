@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define LIM 4
 
-int main(void){
+int main(void) {
   
   int mat[LIM][LIM];
   int i = 0,j = 0,k = 0;
