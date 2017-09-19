@@ -12,7 +12,7 @@ Monitores: ??
 
 ## Listas
 
-  1. [ListaP1](TODO)
+  1. [ListaP1](https://github.com/flaviovdf/AEDS1-2017-2/blob/master/listas/Lista1.md)
   1. [ListaP2](TODO)
   1. [ListaP3](TODO)
 
