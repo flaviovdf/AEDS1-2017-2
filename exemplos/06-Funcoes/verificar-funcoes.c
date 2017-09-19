@@ -10,14 +10,14 @@ void verifica_primo(int n) {
       v = 0;
     i++;
   }
-  if (v) 
+  if (v)
     printf("O número %d é primo.\n", n);
   else
     printf("O número %d não é primo.\n", n);
 }
 
 void verifica_par(int n) {
-  if (n % 2 == 0) 
+  if (n % 2 == 0)
     printf("O número %d é par.\n", n);
   else
     printf("O número %d é ímpar.\n", n);
@@ -33,7 +33,7 @@ void verifica_quadrado_perfeito(int n) {
       v = 1;
     i++;
   }
-  if (v) 
+  if (v)
     printf("O número %d é um quadrado perfeito.\n", n);
   else
     printf("O número %d não é um quadrado perfeito.\n", n);
@@ -49,7 +49,7 @@ void verifica_cubo_perfeito(int n) {
       v = 1;
     i++;
   }
-  if (v) 
+  if (v)
     printf("O número %d é um cubo perfeito.\n", n);
   else
     printf("O número %d não é um cubo perfeito.\n", n);
@@ -63,7 +63,7 @@ int le_numero() {
 }
 
 
-int main() {  
+int main(void) {
   int n;
   int op;
 
@@ -101,7 +101,7 @@ int main() {
       verifica_par(n);
       verifica_quadrado_perfeito(n);
       verifica_cubo_perfeito(n);
-      break; 
+      break;
     default:
       printf("Opção inválida.\n");
     }

@@ -4,7 +4,7 @@
  */
 #include <stdio.h>
 
-int main() {  
+int main(void) {
   int i, n, v;
   int op;
 
@@ -25,22 +25,22 @@ int main() {
       i = 2;
       v = 1;
       while (i <= n/2 && v == 1) {
-	if (n % i == 0)
-	  v = 0;
-	i++;
+        if (n % i == 0)
+          v = 0;
+        i++;
       }
-      if (v) 
-	printf("O número %d é primo.\n", n);
+      if (v)
+	      printf("O número %d é primo.\n", n);
       else
-	printf("O número %d não é primo.\n", n);
+	      printf("O número %d não é primo.\n", n);
       break;
     case 2:
       printf("n: ");
       scanf("%d", &n);
-      if (n % 2 == 0) 
-	printf("O número %d é par.\n", n);
+      if (n % 2 == 0)
+	      printf("O número %d é par.\n", n);
       else
-	printf("O número %d é ímpar.\n", n);
+	      printf("O número %d é ímpar.\n", n);
       break;
     case 3:
       printf("n: ");
@@ -48,14 +48,14 @@ int main() {
       i = 1;
       v = 0;
       while (i <= n/2 && v == 0) {
-	if (i * i == n)
-	  v = 1;
-	i++;
+	      if (i * i == n)
+	        v = 1;
+	      i++;
       }
-      if (v) 
-	printf("O número %d é um quadrado perfeito.\n", n);
+      if (v)
+	      printf("O número %d é um quadrado perfeito.\n", n);
       else
-	printf("O número %d não é um quadrado perfeito.\n", n);
+	      printf("O número %d não é um quadrado perfeito.\n", n);
       break;
     case 4:
       printf("n: ");
@@ -63,17 +63,17 @@ int main() {
       i = 1;
       v = 0;
       while (i <= n/2 && v == 0) {
-	if (i * i * i == n)
-	  v = 1;
-	i++;
+	      if (i * i * i == n)
+	        v = 1;
+	      i++;
       }
-      if (v) 
-	printf("O número %d é um cubo perfeito.\n", n);
+      if (v)
+	      printf("O número %d é um cubo perfeito.\n", n);
       else
-	printf("O número %d não é um cubo perfeito.\n", n);
+	      printf("O número %d não é um cubo perfeito.\n", n);
       break;
     case 5:
-      break; 
+      break;
     default:
       printf("Opção inválida.\n");
     }
