@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+int main(void) {
   unsigned int u;
   printf("Digite um número sem sinal: ");
   scanf("%u",&u);

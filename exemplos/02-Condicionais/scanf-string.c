@@ -1,5 +1,5 @@
 #include <stdio.h>
-main(){
+int main(void) {
   char str[100];
   printf("Digite uma string: ");
   scanf("%s", str);

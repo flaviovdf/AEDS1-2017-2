@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-main () {
+int main(void) {
   int a, b, c;
   
   printf("Digite três números: ");

@@ -3,7 +3,7 @@
  */
 #include <stdio.h>
 
-main() {
+int main(void) {
 
   printf ("!0  vale %d\n",!0);
   printf ("!1  vale %d\n",!1);

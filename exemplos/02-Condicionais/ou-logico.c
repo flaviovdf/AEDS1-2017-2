@@ -3,7 +3,7 @@
  */
 #include <stdio.h>
 
-main() {
+int main(void) {
 
   printf ("(1 || 1) vale %d\n",(1 || 1));
   printf ("(1 || 0) vale %d\n",(1 || 0));

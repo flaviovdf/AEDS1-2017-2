@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-main() {
+int main(void) {
   unsigned int a;
 
   printf("RA: ");

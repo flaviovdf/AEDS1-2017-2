@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-main() {
+int main(void) {
   float coef[26];
   int grau, i;
   

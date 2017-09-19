@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   float nota[100], media;
   int n, i;
 

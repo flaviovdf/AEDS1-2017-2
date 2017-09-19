@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-main () {
+int main(void) {
   char asteriscos[16], cifroes[16], arrobas[16];
   int i;
 

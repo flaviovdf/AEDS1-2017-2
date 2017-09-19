@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main() {
+int main(void) {
   int i, n, fat;
 
   printf("Entre com um número inteiro positivo: ");

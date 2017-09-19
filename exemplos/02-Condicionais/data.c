@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main () {
+int main(void) {
   int dia_a, mes_a, ano_a;
   int dia_b, mes_b, ano_b;
 

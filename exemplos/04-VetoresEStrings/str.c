@@ -4,7 +4,7 @@
  */
 #include <stdio.h>
 
-main() {
+int main(void) {
   char str[30];
   int i;
 
