@@ -2,7 +2,74 @@
 
 ## Lista -- Prova 2: Structs e Funções
 
-## Structs
+### Funções
+
+1. Escreva uma função que recebe um vetor salva o maior elemento em um
+endereço passado por referência:
+```c
+void menor(int n. int vetor[n], int *menor_aqui);
+```
+
+1. Escreva um algoritmo que determina se um número inteiro é primo. Qual
+   é a complexidade do seu algoritmo?
+
+1. Escreva um que aproxima o logaritmo de um número inteiro para um número
+   outro inteiro cujo valor é próximo do log real. Isto é, arredonde o valor
+   de log para cima ou para baixo. Por exemplo log<sub>3</sub>10 = 2.09. 
+   Você pode retornar 2 ou 3. Qual a complexidade da sua função?
+   
+   ```c
+   int myLogTosco(int number, int power)
+   ```
+   
+   Não utilize a `math.h` ou qualquer biblioteca externa. Código C apenas.
+   
+1. Escreva uma função que retorna os *x* menores números de um vetor. Quando
+   *x=1*, retornamos apenas o menor número. Quando *x=2* retornamos os dois
+   menores. Qual a complexidade da sua função?
+
+   ```c
+   int nSmallest(int *vec, int n, int x)
+   ```
+   
+   n é número de elementos no vetor.
+   
+1. Escreva um algoritmo que compacta uma string. A compactação de uma string
+   é uma operação que simplesmente conta o número de ocorrências de letras na
+   string retornando uma nova string de tamanho menor. Por exemplo, a string:
+
+   ``` aaaaabcdddeeeffffff   abc```
+
+   É compactada para:
+
+   ```a5b1c2d3e3f6 3a1b1c1```
+
+   Sua função deve ter uma assinatura como:
+
+   ```c
+   char *compacta(char *string)
+   ```
+
+   Escreva também a função inversa
+
+   ```c
+   char *descompacta(char *string)
+   ```
+
+   Indique a complexidade das duas funções em termos do tamanho das strings.
+
+1. Escreva um programa que contenha uma função com a seguinte assinatura:
+```c
+int dados_triang(float a, float b, float c, float *area, float *perímetro);
+```
+A função deverá receber por valor as medidas de 3 segmentos de reta, a, b e c. Caso seja possível formar um triângulo, a função deverá retornar 1 (por meio do comando return) e os parâmetros area e perimetro, passados por referência, deverão receber os respectivos valores referentes ao triângulo. Caso não seja possível formar um triângulo, a função deverá retornar 0 e os parâmetros area e perimetro deverão também receber valor 0.
+
+O programa deverá receber a medida dos 3 segmentos e deverá informar ao usuário se é possível formar um triângulo ou não. O programa também deverá informar o valor da área e do perímetro do triângulo. Caso não seja possível formar um triângulo, o programa deverá informar area=0 e perimetro=0.
+
+1. Escreva uma função para calcular o valor da seguinte função harmônica h(x) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/x, para um inteiro x positivo (n>0).
+
+
+### Structs
 
 1. Crie uma estrutura para representar as coordenadas de um ponto no plano
 (posições X e Y). Em seguida, declare e leia do teclado dois pontos e exiba a
