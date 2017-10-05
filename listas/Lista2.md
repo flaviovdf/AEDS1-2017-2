@@ -7,7 +7,7 @@
 1. Escreva uma função que recebe um vetor salva o maior elemento em um
    endereço passado por referência:
    ```c
-   void menor(int n. int vetor[n], int *menor_aqui);
+   void menor(int n, int vetor[n], int *menor_aqui);
    ```
 
 1. Escreva um algoritmo que determina se um número inteiro é primo.
