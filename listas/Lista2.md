@@ -26,9 +26,9 @@
 
 1. Escreva uma função que retorna os *x* menores números de um vetor. Quando
    *x=1*, retornamos apenas o menor número. Quando *x=2* retornamos os dois
-   menores.
+   menores. Um ponteiro para um vetor pode ajudar.
    ```c
-   int x_menores(int n, int vec[n], int x)
+   void x_menores(int n, int vec[n], int x, seus_parametros_aqui)
    ```
 
 1. Escreva um algoritmo que compacta uma string. A compactação de uma string
