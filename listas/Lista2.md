@@ -1,6 +1,6 @@
 # AEDS1: Listas de Exercícios
 
-## Lista -- Prova 2: Structs e Funções
+## Lista -- Prova 2: Funções e Structs
 
 ### Funções
 
@@ -20,7 +20,7 @@
    valor de log para cima ou para baixo. Por exemplo log<sub>3</sub>10 = 2.09.
    Você pode retornar 2 ou 3. Qual a complexidade da sua função?
    ```c
-   int log_tosco(int number, int power)
+   int log_tosco(int number, int power);
    ```
    Não utilize a `math.h` ou qualquer biblioteca externa. Código C apenas.
 
@@ -28,7 +28,7 @@
    *x=1*, retornamos apenas o menor número. Quando *x=2* retornamos os dois
    menores. Um ponteiro para um vetor pode ajudar.
    ```c
-   void x_menores(int n, int vec[n], int x, seus_parametros_aqui)
+   void x_menores(int n, int vec[n], int x, seus_parametros_aqui);
    ```
 
 1. Escreva um algoritmo que compacta uma string. A compactação de uma string
