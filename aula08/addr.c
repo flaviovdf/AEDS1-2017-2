@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void) {
   int a = 7;
-  int *r = a;
+  int *r = &a;
   printf("end. %p\n", r);
   printf("valor. %d\n", a);
   printf("valor da ref r. %d\n", *r);
