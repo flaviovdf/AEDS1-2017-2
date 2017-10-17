@@ -18,8 +18,8 @@ Monitores: ??
 
 ## TP Allegro
 
-  1. [Descrição](TODO)
-  1. [Dicas Allegro](TODO)
+  1. [Descrição](./allegro/enunciado.pdf)
+  1. [Dicas Allegro](./allegro/AEDS1-TP.zip)
   
 ## Slides
 
