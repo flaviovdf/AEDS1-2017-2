@@ -8,18 +8,16 @@ Sala Teórica: 2013 (Icex)
 
 Sala Prática: 1009 e 1008 (Icex)
 
-Monitores: ??
-
 ## Listas
 
   1. [ListaP1](https://github.com/flaviovdf/AEDS1-2017-2/blob/master/listas/Lista1.md)
-  1. [ListaP2](TODO)
+  1. [ListaP2](https://github.com/flaviovdf/AEDS1-2017-2/blob/master/listas/Lista2.md)
   1. [ListaP3](TODO)
 
 ## TP Allegro
 
-  1. [Descrição](TODO)
-  1. [Dicas Allegro](TODO)
+  1. [Descrição](./allegro/enunciado.pdf)
+  1. [Exemplos Allegro](./allegro/AEDS1-TP.zip)
   
 ## Slides
 
