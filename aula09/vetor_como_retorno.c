@@ -5,7 +5,6 @@ void cria_vetor(int *vetor, int n) {
   vetor[1] = 3;
 }
 
-
 int main(void) {
   int n = 100;
   int vetor[n];
