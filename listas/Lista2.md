@@ -1,10 +1,10 @@
 # AEDS1: Listas de Exercícios
 
-## Lista -- Prova 2: Funções e Structs
+## Lista -- Prova 2: Funções, Arquivos e Structs
 
 ### Funções
 
-1. Escreva uma função que recebe um vetor salva o maior elemento em um
+1. Escreva uma função que recebe um vetor salva o menor elemento em um
    endereço passado por referência:
    ```c
    void menor(int n, int vetor[n], int *menor_aqui);
@@ -54,57 +54,63 @@
    int dados_triang(float a, float b, float c, float *area, float *perímetro);
    ```
 
-   A função deverá receber por valor as medidas de 3 segmentos de reta, a, b e c.
-   Caso seja possível formar um triângulo, a função deverá retornar 1 (por meio do
-   comando return) e os parâmetros area e perimetro, passados por referência,
-   deverão receber os respectivos valores referentes ao triângulo. Caso não seja
-   possível formar um triângulo, a função deverá retornar 0 e os parâmetros area e
-   perimetro deverão também receber valor 0.
+   A função deverá receber por valor as medidas de 3 segmentos de reta, a, b e
+   c.  Caso seja possível formar um triângulo, a função deverá retornar 1 (por
+   meio do comando return) e os parâmetros `area` e `perimetro`, passados por
+   referência, deverão receber os respectivos valores referentes ao triângulo.
+   Caso não seja possível formar um triângulo, a função deverá retornar 0 e os
+   parâmetros `area` e `perimetro` deverão também receber valor 0.
 
-   O programa deverá receber a medida dos 3 segmentos e deverá informar ao
-   usuário se é possível formar um triângulo ou não. O programa também deverá
-   informar o valor da área e do perímetro do triângulo. Caso não seja possível
-   formar um triângulo, o programa deverá informar area=0 e perimetro=0.
+   O programa deverá receber a medida dos 3 segmentos e deverá informar ao
+   usuário se é possível formar um triângulo ou não. O programa também deverá
+   informar o valor da área e do perímetro do triângulo. Caso não seja possível
+   formar um triângulo, o programa deverá informar `area=0` e `perimetro=0`.
 
-1. Escreva uma função para calcular o valor da seguinte função harmônica
+1. Escreva uma função para calcular o valor da seguinte função harmônica
    h(x) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/x, para um inteiro x positivo (n>0).
+
+### Arquivos
+
+1. Q1
+1. Q2
+1. Q3
 
 ### Structs
 
 1. Crie uma estrutura para representar as coordenadas de um ponto no plano
-(posições X e Y). Em seguida, declare e leia do teclado dois pontos e exiba a
-distância entre eles.
+   (posições X e Y). Em seguida, declare e leia do teclado dois pontos e exiba
+   a distância entre eles.
 
-1. Crie uma estrutura chamada Retangulo. Essa estrutura deverá conter o ponto
-superior esquerdo e o ponto inferior direito do retângulo. Cada ponto é
-definido por uma estrutura Ponto, criada no exercício anterior. Faça um
-programa que declare e leia uma estrutura Retangulo e exiba a área, o
-comprimento da diagonal e o perímetro desse retângulo.
+1. Crie uma estrutura chamada `retangulo_t`. Essa estrutura deverá conter o
+   ponto superior esquerdo e o ponto inferior direito do retângulo. Cada ponto
+   é definido por uma estrutura Ponto, criada no exercício anterior. Faça um
+   programa que declare e leia uma estrutura `retangulo_t` e exiba a área, o
+   comprimento da diagonal e o perímetro desse retângulo.
 
-1. Usando as estruturas Retangulo e Ponto dos exercícios anteriores, faça um
-programa que declare e leia uma estrutura Retangulo e um Ponto e informe se
-esse ponto está ou não dentro do retângulo.
+1. Usando as estruturas `retangulo_t` e Ponto dos exercícios anteriores, faça
+   um programa que declare e leia uma estrutura `retangulo_t` e um `ponto_t` e
+   informe se esse ponto está ou não dentro do retângulo.
 
-1. Crie uma estrutura Aluno representando um aluno de uma disciplina. Essa
-estrutura deve conter o número de matrícula do aluno, seu nome e as notas de
-três provas. Agora, escreva um programa que leia os dados de cinco alunos e os
-armazena nessa estrutura. Em seguida, exiba o nome e as notas do aluno que
-possui a maior média geral dentre os cinco.
+1. Crie uma estrutura `aluno_t` representando um aluno de uma disciplina. Essa
+   estrutura deve conter o número de matrícula do aluno, seu nome e as notas de
+   três provas. Agora, escreva um programa que leia os dados de cinco alunos e
+   os armazena nessa estrutura. Em seguida, exiba o nome e as notas do aluno
+   que possui a maior média geral dentre os cinco.
 
-1. Crie uma estrutura Hora representando uma hora. Essa estrutura deve conter
-os campos hora, minuto e segundo. Agora, escreva um programa que leia um vetor
-de cinco posições dessa estrutura e imprima a maior hora.
+1. Crie uma estrutura `hora_t` representando uma hora. Essa estrutura deve
+   conter os campos hora, minuto e segundo. Agora, escreva um programa que leia
+   um vetor de cinco posições dessa estrutura e imprima a maior hora.
 
-1. Crie uma estrutura Atleta representando um atleta. Essa estrutura deve
-conter o nome do atleta, seu esporte, idade e altura. Agora, escreva um
-programa que leia os dados de cinco atletas.  Calcule e exiba os nomes do
-atleta mais alto e do mais velho.
+1. Crie uma estrutura `atleta_t` representando um atleta. Essa estrutura deve
+   conter o nome do atleta, seu esporte, idade e altura. Agora, escreva um
+   programa que leia os dados de cinco atletas.  Calcule e exiba os nomes do
+   atleta mais alto e do mais velho.
 
-1. Usando a estrutura Atleta do exercício anterior, escreva um programa que
-leia os dados de cinco atletas e os exiba por ordem de idade, do mais velho
-para o mais novo.
+1. Usando a estrutura `atleta_t` do exercício anterior, escreva um programa que
+   leia os dados de cinco atletas e os exiba por ordem de idade, do mais velho
+   para o mais novo.
 
-1. Escreva um programa que contenha uma estrutura Data representando uma data
-válida. Essa estrutura deve conter os campos “dia”, “mês” e “ano”. Em seguida,
-leia duas datas e armazene nessa estrutura. Calcule e exiba o número de dias
-que decorreram entre as duas datas.
+1. Escreva um programa que contenha uma estrutura `data_t` representando uma
+   data válida. Essa estrutura deve conter os campos “dia”, “mês” e “ano”. Em
+   seguida, leia duas datas e armazene nessa estrutura. Calcule e exiba o
+   número de dias que decorreram entre as duas datas.
