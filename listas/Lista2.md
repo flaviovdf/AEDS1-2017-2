@@ -132,6 +132,34 @@ $$\|X\|_{\rm F}^2 =\sum_{i=1}^m\sum_{j=1}^n |a_{ij}|^2 $$
 
 Soma de todos os elementos elevados ao quadrado.
 
+Agora, faça um programa com três funções para cada norma acima. O mesmo vai
+fazer uso de um arquivo passado pela linha de comando. A primeira linha do
+arquivo indica o número de casos. Isto é, se a primeira linha for `5`, você vai
+computar as três normas acima para 5 matrizes. Após a primeira linha, será
+indicado o tamanho da primeira matriz (n-linhas e m-colunas). Cada uma das
+próximas n-linhas será uma linha da matriz (cada linha com m-colunas). Após
+n-linhas, o tamanho da matriz seguinte será indicado. O processo se repete até
+você ler todos os casos de teste (5 no exemplo acima).
+
+Para cada caso de teste você deve escrever um arquivo de saída. Tal arquivo vai
+conter em cada linha 3 colunas indicado as três normas de cada matriz do caso de
+teste. Abaixo segue um exemplo:
+
+*Os números sempre serão inteiros*
+
+| *Entrada* `entrada.txt` | Saída `saida.txt` |
+|-------------------------|-------------------|
+|3                        | 101 112  18552    |
+|2 4                      | 8 7 84            |
+|1 -1 90 20               | 7 7 49            |
+|0 -100 1 -7              |                   |
+|3 5                      |                   |
+|0 0 0 -3 0               |                   |
+|0 -7 0 0 0               |                   |
+|0 0 1 5 0                |                   |
+|1 1                      |                   |
+|7                        |                   |
+
 
 ### Structs
 
