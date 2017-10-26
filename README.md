@@ -16,7 +16,7 @@ Sala Prática: 1009 e 1008 (Icex)
 
 ## TP Allegro
 
-  1. [Descrição](./allegro/enunciado.pdf)
+  1. [Descrição](./enunciado.pdf)
   1. [Exemplos Allegro](./allegro/AEDS1-TP.zip)
   
 ## Slides
