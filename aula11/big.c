@@ -21,6 +21,7 @@ digito_t *cria_novo_digito() {
   novo->valor = 0;
   novo->prox = NULL;
   novo->anterior = NULL;
+  return novo;
 }
 
 void incrementa(bignum_t *x) {
