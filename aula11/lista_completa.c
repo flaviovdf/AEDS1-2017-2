@@ -31,6 +31,7 @@ void popula_lista(lista_t *lista, int n) {
   srand(time(NULL));   // indicamos para o C que vamos gerar números aleatórios
   for (int i = 0; i < n; i++) {
     no_t *no = (no_t *) malloc(sizeof(no_t));
+    if (no == NULL) { printf("Erro no malloc\n"); exit(1); }
     if (lista->primeiro == NULL) {
       lista->primeiro = no;
     }
