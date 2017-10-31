@@ -12,17 +12,6 @@ typedef struct {
   no_t *ultimo;
 } lista_t;
 
-void limpa(lista_t *lista) {
-  no_t *to_free = lista->primeiro;
-  no_t *to_visit = NULL;
-  while (to_free != NULL) {
-    to_visit = to_free->prox;
-    free(to_free);
-    to_free = to_visit;
-  }
-  free(lista);
-}
-
 int main(void) {
   lista_t *lista = (lista_t *) malloc(sizeof(lista_t));
   if (lista == NULL) { printf("Erro no malloc\n"); exit(1); }
@@ -34,6 +23,7 @@ int main(void) {
   int n = 10;
   for (int i = 0; i < 10; i++) {
     no_t *no = (no_t *) malloc(sizeof(no_t));
+    if (no == NULL) { printf("Erro no malloc\n"); exit(1); }
     if (lista->primeiro == NULL) {
       lista->primeiro = no;
     }
@@ -43,6 +33,5 @@ int main(void) {
       lista->ultimo->prox = no;
     lista->ultimo = no;
   }
-  limpa(lista);
   return 0;
 }
