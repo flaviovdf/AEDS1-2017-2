@@ -80,85 +80,64 @@ Os problemas de arquivos fazem uso de `argc` e `argv`.
    para salvar um arquivo que é uma cópia do anterior.
 1. Um conceito bastante utilizado na álgebra linear é o de norma de matrizes e
    vetores. Então, vamos iniciar definindo uma matriz *X*:
+   
+   ![Matriz](matriz.png)
+   
+   A matriz *X* acima tem n-linhas e m-colunas. Escreva **três**
+   funções diferentes. Cada função é definida como uma norma de uma matriz.
+   Em particular, você vai implementar a norma um, norma infinito e norma
+   frobenius.
+   
+   Para mais informações veja o Wikipedia:
+   https://en.wikipedia.org/wiki/Matrix_norm
 
-![Matriz](matriz.png)
+   **Norma Um**
+   
+   ![Norma1](normaum.png)
+   
+   Soma da maior coluna que tem a maior soma.
 
-<!---
-$$
-X = \begin{bmatrix}
-    x_{11}       & x_{12} & x_{13} & \dots & x_{1m} \\
-    x_{21}       & x_{22} & x_{23} & \dots & x_{2m}\\
-   \dots & \dots & \dots & \dots & \dots\\
-    x_{n1}       & x_{n2} & x_{n3} & \dots & x_{nm}
-\end{bmatrix}
-$$
--->
+   **Norma Infinito**
+   
+   ![NormaInf](normainf.png)
+   
+   Soma da maior linha que tem a maior soma.
 
-A matriz *X* acima tem n-linhas e m-colunas. Neste TP você vai escrever **três**
-funções diferentes. Cada função é definida como uma norma de uma matriz.
-Em particular, você vai implementar a norma um, norma infinito e norma
-frobenius. 
+   **Norma Frobenius ao Quadrado**
+   
+   ![NormaFro](normfro.png)
+   
+   Soma de todos os elementos elevados ao quadrado.
 
-Para mais informações veja o Wikipedia:
-https://en.wikipedia.org/wiki/Matrix_norm
+   Agora, faça um programa com três funções para cada norma acima. O mesmo vai
+   fazer uso de um arquivo passado pela linha de comando. A primeira linha do
+   arquivo indica o número de casos. Isto é, se a primeira linha for `5`, você vai
+   computar as três normas acima para 5 matrizes. Após a primeira linha, será
+   indicado o tamanho da primeira matriz (n-linhas e m-colunas). Cada uma das
+   próximas n-linhas será uma linha da matriz (cada linha com m-colunas). Após
+   n-linhas, o tamanho da matriz seguinte será indicado. O processo se repete até
+   você ler todos os casos de teste (5 no exemplo acima).
 
-**Norma Um**
-
-![Norma1](normaum.png)
-
-<!---
-$$ \|X\|_1 = \max_{1 \leq j \leq n} \sum_{i=1}^m | x_{ij} | $$
---->
-
-Soma da maior coluna que tem a maior soma.
-
-**Norma Infinito**
-
-![NormaInf](normainf.png)
-
-<!---
-$$ \|X\|_\infty = \max_{1 \leq i \leq m} \sum _{j=1}^n | x_{ij} | $$
---->
-
-Soma da maior linha que tem a maior soma.
-
-**Norma Frobenius ao Quadrado**
-
-![NormaFro](normfro.png)
-
-<!---
-$$\|X\|_{\rm F}^2 =\sum_{i=1}^m\sum_{j=1}^n |a_{ij}|^2 $$
---->
-
-Soma de todos os elementos elevados ao quadrado.
-
-Agora, faça um programa com três funções para cada norma acima. O mesmo vai
-fazer uso de um arquivo passado pela linha de comando. A primeira linha do
-arquivo indica o número de casos. Isto é, se a primeira linha for `5`, você vai
-computar as três normas acima para 5 matrizes. Após a primeira linha, será
-indicado o tamanho da primeira matriz (n-linhas e m-colunas). Cada uma das
-próximas n-linhas será uma linha da matriz (cada linha com m-colunas). Após
-n-linhas, o tamanho da matriz seguinte será indicado. O processo se repete até
-você ler todos os casos de teste (5 no exemplo acima).
-
-Para cada caso de teste você deve escrever um arquivo de saída. Tal arquivo vai
-conter em cada linha 3 colunas indicado as três normas de cada matriz do caso de
-teste. Abaixo segue um exemplo:
-
-*Os números sempre serão inteiros*
-
-| *Entrada* `entrada.txt` | Saída `saida.txt` |
-|-------------------------|-------------------|
-|3                        | 101 112  18552    |
-|2 4                      | 8 7 84            |
-|1 -1 90 20               | 7 7 49            |
-|0 -100 1 -7              |                   |
-|3 5                      |                   |
-|0 0 0 -3 0               |                   |
-|0 -7 0 0 0               |                   |
-|0 0 1 5 0                |                   |
-|1 1                      |                   |
-|7                        |                   |
+   Para cada caso de teste você deve escrever um arquivo de saída. Tal arquivo vai
+   conter em cada linha 3 colunas indicado as três normas de cada matriz do caso de
+   teste. Abaixo segue um exemplo:
+  
+   **a) Os números sempre serão inteiros**
+   
+   **b) O arquivo de entrada se chama entrada.txt e encontra-se nesta pasta**
+  
+   | *Entrada* `entrada.txt` | Saída             |
+   |-------------------------|-------------------|
+   |3                        | 101 112  18552    |
+   |2 4                      | 8 7 84            |
+   |1 -1 90 20               | 7 7 49            |
+   |0 -100 1 -7              |                   |
+   |3 5                      |                   |
+   |0 0 0 -3 0               |                   |
+   |0 -7 0 0 0               |                   |
+   |0 0 1 5 0                |                   |
+   |1 1                      |                   |
+   |7                        |                   |
 
 
 ### Structs
