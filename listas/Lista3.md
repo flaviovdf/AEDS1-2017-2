@@ -4,9 +4,30 @@
 
 ## Recursividade
 
+1. Escreva uma função recursiva que calcule a soma dos primeiros n cubos: S = 1³ + 2³ + ... + n³
+
+1. Escreva um procedimento recursivo para imprimir todos os números naturais de 0 até N em  ordem crescente.
+
+1. Escreva um procedimento recursivo para imprimir todos os números naturais de 0 até N em  ordem decrescente.
+
+1. Crie uma função recursiva que retorne a soma dos elementos de um vetor de inteiros.
+
+1. Crie uma função recursiva que retorne a média dos elementos de um vetor de inteiros.
+
+1. Escreve uma função recursiva que receba por parâmetro dois valores inteiros x e y e calcule e retorne o resultado de x^y (x elevado a y) para o programa principal.
+
+1. Escreva uma função que recebe uma  string como parâmetro e a imprima invertida.
+
+1. Escreva uma função recursiva que receba um valor inteiro x e o retorne invertido. Exemplo: se  x = 123, a função deve retornar 321.
+
+1. Escreva uma função recursiva que receba um valor inteiro em base decimal e o imprima em  base binária.
+
+1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
+
+
 ## Recursividade + Ponteiros!
 
-1. **Recursão de Cauda** Usando o esqueleto abaixo, implemente uma função recursiva que encontra um elemento em uma lista encadeada. Isto é, se a lista contém os elementos `["didi", "dede", "mussum", "zacarias"]` e a entrada da função for `"dede"` seu código deve retornar `1`. Caso o elemento não exista, o código deve retornar `-1`.
+1. Usando o esqueleto abaixo, implemente uma função recursiva que encontra um elemento em uma lista encadeada. Isto é, se a lista contém os elementos `["didi", "dede", "mussum", "zacarias"]` e a entrada da função for `"dede"` seu código deve retornar `1`. Caso o elemento não exista, o código deve retornar `-1`.
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,6 +65,17 @@ no_t *insere(no_t *ultimo, char *valor) {
 }
 
 
+void libera_tudo(no_t *no) {
+  no_t *primeiro = no;
+  no_t *aux;
+  while (primeiro != NULL) {
+    aux = primeiro->prox;
+    free(primeiro);
+    primeiro = aux;
+  }
+}
+
+
 int main(void) {
   no_t *primeiro = insere(NULL, "didi");
   no_t *ultimo = insere(ultimo, "mussum");
@@ -61,14 +93,11 @@ int main(void) {
   pos = acha_elemento(primeiro, "moe");
   if (pos > -1) printf("Achei moe na posição %d!\n", pos);
   else printf("não achei moe :(\n");
-
-  no_t *aux;
-  while (primeiro != NULL) {
-    aux = primeiro->prox;
-    free(primeiro);
-    primeiro = aux;
-  }
+  
+  libera_tudo(primeiro);
 
   return 0;
 }
 ```
+
+1. Usando o esqueleto abaixo, implemente uma função recursiva que encontra um elemento em uma lista encadeada. Isto é, se a lista contém os elementos `["didi", "dede", "mussum", "zacarias"]` e a entrada da função for `"dede"` seu código deve retornar `1`. Caso o elemento não exista, o código deve retornar `-1`.
