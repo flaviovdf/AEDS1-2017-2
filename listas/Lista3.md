@@ -24,6 +24,18 @@
 
 1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
 
+1. Ordenação.
+
+1. *(medium)* Torres de Hanoi
+
+1. *(medium)* Steps
+
+1. *(hard)* Número de partições
+
+1. *Recursividade + Laços (hard)* Função Paint
+
+1. *Recursividade + Laços (hard)* Permutações
+
 
 ## Recursividade + Ponteiros!
 
