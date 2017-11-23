@@ -2,6 +2,13 @@
 
 ## Ponteiros
 
+1. Escreva uma função que usando passagem por referência de ponteiros troca 2 elementos. Isto é, o conteúdo apontado por `x` vira o conteúdo apontado por `y` (não troque os endereços, troque o conteúdo).
+```void troca(int *x, int *y)```
+
+1. 
+
+1. 
+
 ## Recursividade
 
 1. Escreva uma função recursiva que calcule a soma dos primeiros n cubos: S = 1³ + 2³ + ... + n³
@@ -24,11 +31,11 @@
 
 1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
 
-1. Usando o esqueleto abaixo, implemente a função flood-fill de forma recursiva. A sua função vai funcionar de forma similar ao "balde" do paint:
+1. Usando o esqueleto abaixo, implemente a função flood-fill de forma recursiva. A sua função vai funcionar de
+   forma similar ao "balde" do paint:
+   ![exemplo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Recursive_Flood_Fill_4_%28aka%29.gif).
 
-![exemplo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Recursive_Flood_Fill_4_%28aka%29.gif).
-
-Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
+   Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
 ```c
 #include <stdio.h>
 
@@ -112,7 +119,6 @@ int main(void) {
   }
 }
 ```
-
 1. Dado um vetor de elementos indexados de 0 até n-1. Uma forma simples de ordenar um número é seguir os passos abaixo:
 ```
 dado um vetor v de tamanho n
@@ -232,5 +238,3 @@ int main(void) {
   return 0;
 }
 ```
-
-1. Usando o mesmo esqueleto, implemente uma função recursiva que encontra um elemento em uma lista encadeada. Isto é, se a lista contém os elementos `["didi", "dede", "mussum", "zacarias"]` e a entrada da função for `"dede"` seu código deve retornar `1`. Caso o elemento não exista, o código deve retornar `-1`.
