@@ -2,14 +2,15 @@
 
 ## Ponteiros
 
-1. Escreva uma função que usando passagem por referência de ponteiros troca 2 elementos. Isto é, o conteúdo apontado por `x` vira o conteúdo apontado por `y` (não troque os endereços, troque o conteúdo).
+1. Escreva uma função que troca 2 elementos usando passagem por referência. Isto é, o conteúdo apontado por `x` vira o conteúdo apontado por `y` (não troque os endereços, troque o conteúdo).
 ```c
 void troca(int *x, int *y)
 ```
 
-1. 
-
-1. 
+1. Em sala, aprendemos sobre listas encadeadas. Na nossa lista, apenas inserimos elementos no lado esquerdo ou direito (inicio ou fim). Mude o código da simples simplesmente e duplamente encadeada para:
+   1. Inserir um elemento em uma dada posição `i`. Isto é, se a lista for `[1, 2, 5, 23]` e inserimos `7` na posição `2` a
+      mesma vira `[1, 2, 7, 5, 23]`
+   1. Remover um elemento da posição `i`. Removendo `i=2`, ficamos com a lista original.
 
 ## Recursividade
 
