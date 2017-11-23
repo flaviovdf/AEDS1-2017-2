@@ -29,7 +29,7 @@
 ![exemplo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Recursive_Flood_Fill_4_%28aka%29.gif).
 
 Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
-```
+```c
 #include <stdio.h>
 
 #define BRANCO  0
