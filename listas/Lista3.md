@@ -25,7 +25,9 @@
 1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
 
 1. Usando o esqueleto abaixo, implemente a função flood-fill de forma recursiva. A sua função vai funcionar de forma similar ao "balde" do paint:
+
 ![exemplo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Recursive_Flood_Fill_4_%28aka%29.gif).
+
 Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
 ```
 #include <stdio.h>
@@ -111,15 +113,49 @@ int main(void) {
 }
 ```
 
-1. Ordenação.
+1. Dado um vetor de elementos indexados de 0 até n-1. Uma forma simples de ordenar um número é seguir os passos abaixo:
+```
+dado um vetor v de tamanho n
+i = 0
+equanto i < n:
+   Ache o menor número de um vetor entre `[i, n)`
+   Coloque tal número na primeira posição `i` (troque o mesmo com v[i])
+   i += 1
+```
+Crie uma função que acha o menor elemento a partir de uma posição `i` de um vetor. Após isto, faça um programa recursivo
+para ordenado o mesmo.
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
-1. *(medium)* Torres de Hanoi
+int min(int i, int n, int v[n]) {
+  // acha o menor elemento do vetor ignorando tudo antes de i
+  // n é o tamanho
 
-1. *(medium)* Steps
+  if (i >= n) {
+    printf("erro");
+    exit(1);
+  }
+  // . . .
+  return 0;
+}
 
-1. *(hard)* Número de partições
+void troca(int i, int j, int n, int v[n]) {
+  // troca a posição i com a posição j do vetor
+  // n é o tamanho
+}
 
-1. *Recursividade + Laços (hard)* Permutações
+void ordena(int i, int n, int v[n]) {
+
+}
+
+int main(void) {
+
+  return 0;
+}
+```
+
+1. Problemas mais complicados dos slides.
 
 
 ## Recursividade + Ponteiros!
