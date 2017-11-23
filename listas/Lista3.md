@@ -3,7 +3,9 @@
 ## Ponteiros
 
 1. Escreva uma função que usando passagem por referência de ponteiros troca 2 elementos. Isto é, o conteúdo apontado por `x` vira o conteúdo apontado por `y` (não troque os endereços, troque o conteúdo).
-```void troca(int *x, int *y)```
+```c
+void troca(int *x, int *y)
+```
 
 1. 
 
