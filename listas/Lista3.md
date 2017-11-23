@@ -11,7 +11,7 @@ void troca(int *x, int *y)
    1. Inserir um elemento em uma dada posição `i`. Isto é, se a lista for `[1, 2, 5, 23]` e inserimos `7` na posição `2` a
       mesma vira `[1, 2, 7, 5, 23]`
    1. Remover um elemento da posição `i`. Removendo `i=2`, ficamos com a lista original.
-
+   
 ## Recursividade
 
 1. Escreva uma função recursiva que calcule a soma dos primeiros n cubos: S = 1³ + 2³ + ... + n³
