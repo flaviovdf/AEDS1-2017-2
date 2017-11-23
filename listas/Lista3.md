@@ -25,7 +25,7 @@
 1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
 
 1. Usando o esqueleto abaixo, implemente a função flood-fill de forma recursiva. A sua função vai funcionar de forma similar ao "balde" do paint:
-![exemplo](https://en.wikipedia.org/wiki/File:Recursive_Flood_Fill_4_(aka).gif).
+![exemplo](https://upload.wikimedia.org/wikipedia/commons/7/7e/Recursive_Flood_Fill_4_%28aka%29.gif).
 Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
 ```
 #include <stdio.h>
