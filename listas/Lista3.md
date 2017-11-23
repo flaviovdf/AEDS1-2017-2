@@ -24,6 +24,93 @@
 
 1. Escreva uma função recursiva que retorne o menor elemento em um vetor.
 
+1. Usando o esqueleto abaixo, implemente a função flood-fill de forma recursiva. A sua função vai funcionar de forma similar ao "balde" do paint:
+!(https://en.wikipedia.org/wiki/File:Recursive_Flood_Fill_4_(aka).gif)
+Isto é, você deve preencher as entradas BRANCO de LARANJA sem mudar as outras cores.
+```
+#include <stdio.h>
+
+#define BRANCO  0
+#define PRETO   1
+#define LARANJA 2
+
+void flood_fill(int n, int mat[n][n], int i, int j) {
+   // . . .
+}
+
+int main(void) {
+  int n = 9;
+  int mat[n][n];
+  for (int i = 0; i < n; i++)
+    for (int j = 0; j < n; j++)
+      mat[i][j] = 0;
+
+  // primeira linha é tudo PRETO
+  mat[0][0] = PRETO;
+  mat[0][1] = PRETO;
+  mat[0][2] = PRETO;
+  mat[0][3] = PRETO;
+  mat[0][4] = PRETO;
+  mat[0][5] = PRETO;
+  mat[0][6] = PRETO;
+  mat[0][7] = PRETO;
+  mat[0][8] = PRETO;
+
+  // Ultima linha também
+  mat[8][0] = PRETO;
+  mat[8][1] = PRETO;
+  mat[8][2] = PRETO;
+  mat[8][3] = PRETO;
+  mat[8][4] = PRETO;
+  mat[8][5] = PRETO;
+  mat[8][6] = PRETO;
+  mat[8][7] = PRETO;
+  // mat[8][8] = PRETO;
+
+  // primeira coluna é tudo PRETO
+  mat[0][0] = PRETO;
+  mat[1][0] = PRETO;
+  // mat[2][0] = PRETO; deixar só 1 brecha
+  mat[3][0] = PRETO;
+  mat[4][0] = PRETO;
+  mat[5][0] = PRETO;
+  mat[6][0] = PRETO;
+  mat[7][0] = PRETO;
+  mat[8][0] = PRETO;
+
+  // ultima coluna é tudo PRETO
+  mat[0][8] = PRETO;
+  mat[1][8] = PRETO;
+  mat[2][8] = PRETO;
+  mat[3][8] = PRETO;
+  mat[4][8] = PRETO;
+  // mat[5][8] = PRETO; deixar só 1 brecha
+  mat[6][8] = PRETO;
+  mat[7][8] = PRETO;
+  // mat[8][8] = PRETO;
+
+  mat[6][1] = PRETO;
+  mat[7][2] = PRETO;
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      printf("%d ", mat[i][j]);
+    }
+    printf("\n");
+  }
+  printf("\n");
+
+  flood_fill(n, mat, 4, 4);
+  printf("\n");
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      printf("%d ", mat[i][j]);
+    }
+    printf("\n");
+  }
+}
+```
+
 1. Ordenação.
 
 1. *(medium)* Torres de Hanoi
@@ -31,8 +118,6 @@
 1. *(medium)* Steps
 
 1. *(hard)* Número de partições
-
-1. *Recursividade + Laços (hard)* Função Paint
 
 1. *Recursividade + Laços (hard)* Permutações
 
